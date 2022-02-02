@@ -12,7 +12,7 @@
 
     - name: check if bootstrap still works.
       ansible.builtin.include_role:
-        name: robertdebock.bootstrap
+        name: buluma.bootstrap
 
     - name: remove pip module
       ansible.builtin.pip:
