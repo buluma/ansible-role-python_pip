@@ -4,7 +4,7 @@ Install pythons pip on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-python_pip/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-python_pip/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-python_pip/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-python_pip)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/python_pip)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/python_pip)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-python_pip.svg)](https://github.com/buluma/ansible-role-python_pip/releases/)|
+|[![github](https://github.com/buluma/ansible-role-python_pip/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-python_pip/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-python_pip/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-python_pip)|[![quality](https://img.shields.io/ansible/quality/57863)](https://galaxy.ansible.com/buluma/anaconda)|[![downloads](https://img.shields.io/ansible/role/d/57863)](https://galaxy.ansible.com/buluma/anaconda)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-python_pip.svg)](https://github.com/buluma/ansible-role-python_pip/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
