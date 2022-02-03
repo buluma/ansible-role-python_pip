@@ -19,7 +19,7 @@ molecule:
       - image: "alpine"
         tag: "latest"
       - image: "debian"
-        tag: "latest"
+        tag: "bullseye"
       - image: "debian"
         tag: "bookworm"
       - image: "fedora"
