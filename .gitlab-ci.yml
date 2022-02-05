@@ -16,8 +16,6 @@ molecule:
   retry: 1
   parallel:
     matrix:
-      - image: "alpine-openrc"
-        tag: "latest"
       - image: "enterpriselinux"
         tag: "latest"
       - image: "debian-systemd"
@@ -45,8 +43,6 @@ testing:
   retry: 1
   parallel:
     matrix:
-      - image: "alpine-openrc"
-        tag: "latest"
       - image: "enterpriselinux"
         tag: "latest"
       - image: "debian-systemd"
