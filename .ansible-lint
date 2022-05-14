@@ -12,5 +12,5 @@ exclude_paths:
   - ./.tox
   - ./.cache
 
-skip_list:
+warn_list:
   - yaml  # Violations reported by yamllint.
