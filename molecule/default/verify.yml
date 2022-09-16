@@ -5,28 +5,28 @@
   gather_facts: no
 
   tasks:
-    - name: install pip module
+    - name: Install pip module
       ansible.builtin.pip:
         name: docker
         state: present
 
-    - name: check if bootstrap still works.
+    - name: Check if bootstrap still works.
       ansible.builtin.include_role:
         name: buluma.bootstrap
 
-    - name: remove pip module
+    - name: Remove pip module
       ansible.builtin.pip:
         name: docker
         state: absent
 
-    - name: check if requested modules can be installed
+    - name: Check if requested modules can be installed
       ansible.builtin.include_role:
         name: ansible-role-python_pip
       vars:
         python_pip_modules:
           - name: docker
 
-    - name: check if requested modules can be removed
+    - name: Check if requested modules can be removed
       ansible.builtin.include_role:
         name: ansible-role-python_pip
       vars:
@@ -34,16 +34,16 @@
           - name: docker
             state: absent
 
-    - name: check if pyOpenSSL can be installed
+    - name: Check if pyOpenSSL can be installed
       ansible.builtin.pip:
         name: pyOpenSSL
         state: present
       notify:
-        - remove pyOpenSSL
+        - Remove pyOpenSSL
 
   handlers:
 
-    - name: remove pyOpenSSL
+    - name: Remove pyOpenSSL
       ansible.builtin.pip:
         name: pyOpenSSL
         state: absent
