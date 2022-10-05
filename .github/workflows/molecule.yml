@@ -12,6 +12,7 @@ on:
   workflow_dispatch:
   push:
     branches:
+      - master
       - main
       - testing
     paths-ignore:
@@ -47,9 +48,9 @@ jobs:
           - image: "enterpriselinux"
             tag: "8"
           - image: "debian-systemd"
-            tag: "latest"
+            tag: "buster"
           - image: "debian-systemd"
-            tag: "bookworm"
+            tag: "latest"
           - image: "fedora-systemd"
             tag: "35"
           - image: "fedora-systemd"

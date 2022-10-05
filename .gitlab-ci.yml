@@ -1,5 +1,5 @@
 ---
-image: "buluma/github-action-molecule:4.0.9"
+image: "buluma/github-action-molecule:5.0.0"
 
 services:
   - docker:dind
@@ -24,9 +24,9 @@ molecule:
       - image: "enterpriselinux"
         tag: "8"
       - image: "debian-systemd"
-        tag: "latest"
+        tag: "buster"
       - image: "debian-systemd"
-        tag: "bookworm"
+        tag: "latest"
       - image: "fedora-systemd"
         tag: "35"
       - image: "fedora-systemd"
@@ -58,9 +58,9 @@ testing:
       - image: "enterpriselinux"
         tag: "8"
       - image: "debian-systemd"
-        tag: "latest"
+        tag: "buster"
       - image: "debian-systemd"
-        tag: "bookworm"
+        tag: "latest"
       - image: "fedora-systemd"
         tag: "35"
       - image: "fedora-systemd"
