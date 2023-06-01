@@ -5,19 +5,18 @@ galaxy_info:
   description: Install pythons pip on your system.
   license: Apache-2.0
   company: ShadowNet
-  min_ansible_version: "2.10"
+  min_ansible_version: "2.12"
 
   platforms:
     - name: Alpine
       versions:
         - all
-    - name: EL
-      versions:
-        - "8"
     - name: Debian
       versions:
-        - buster
-        - bullseye
+        - all
+    - name: EL
+      versions:
+        - all
     - name: Fedora
       versions:
         - all
@@ -27,7 +26,9 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
-
+    - name: Kali
+      versions:
+        - all
   galaxy_tags:
     - python
     - pip
