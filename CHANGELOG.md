@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-python_pip/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/1.0.10...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#16](https://github.com/buluma/ansible-role-python_pip/issues/16)
+- Update action [\#15](https://github.com/buluma/ansible-role-python_pip/issues/15)
+
 ## [1.0.10](https://github.com/buluma/ansible-role-python_pip/tree/1.0.10) (2023-07-21)
 
 [Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/1.0.9...1.0.10)
