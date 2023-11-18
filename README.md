@@ -2,9 +2,9 @@
 
 Install pythons pip on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-python_pip/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-python_pip/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-python_pip/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-python_pip)|[![quality](https://img.shields.io/ansible/quality/57863)](https://galaxy.ansible.com/buluma/python_pip)|[![downloads](https://img.shields.io/ansible/role/d/57863)](https://galaxy.ansible.com/buluma/python_pip)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-python_pip.svg)](https://github.com/buluma/ansible-role-python_pip/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-python_pip.svg)](https://github.com/buluma/ansible-role-python_pip/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-python_pip.svg)](https://github.com/buluma/ansible-role-python_pip/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-python_pip/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-python_pip/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-python_pip/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-python_pip)|[![downloads](https://img.shields.io/ansible/role/d/4810)](https://galaxy.ansible.com/buluma/python_pip)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-python_pip.svg)](https://github.com/buluma/ansible-role-python_pip/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-python_pip.svg)](https://github.com/buluma/ansible-role-python_pip/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-python_pip.svg)](https://github.com/buluma/ansible-role-python_pip/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -47,7 +47,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 # defaults file for python_pip
 
 # By default no modules should be installed. Note: This does not work on Debian Bookworm.
-# Checkout issue: https://peps.python.org/pep-0668/
+# See https://peps.python.org/pep-0668/
 python_pip_modules: []
 
 # Connect to a (pypi) proxy by setting this variable.
