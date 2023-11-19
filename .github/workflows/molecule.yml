@@ -18,7 +18,7 @@ on:
       - '*'
   pull_request:
   schedule:
-    - cron: '31 16 16 * *'
+    - cron: '31 16 20 * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -46,8 +46,6 @@ jobs:
           - image: "alpine-openrc"
             tag: "latest"
           - image: "debian-systemd"
-            tag: "latest"
-          - image: "debian-systemd"
             tag: "bullseye"
           - image: "enterpriselinux"
             tag: "7"
@@ -67,8 +65,6 @@ jobs:
             tag: "focal"
           - image: "docker-ubuntu-systemd"
             tag: "bionic"
-          - image: "docker-ubuntu-systemd"
-            tag: "lunar"
           - image: "kali"
             tag: "latest"
     steps:
