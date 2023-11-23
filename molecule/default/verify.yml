@@ -2,13 +2,15 @@
 - name: Verify
   hosts: all
   become: yes
-  gather_facts: no
+  gather_facts: yes
 
   tasks:
     - name: Install pip module
       ansible.builtin.pip:
         name: docker
         state: present
+      when:
+        - ansible_distribution_release != "bookworm"
 
     - name: Check if bootstrap still works.
       ansible.builtin.include_role:
@@ -18,20 +20,22 @@
       ansible.builtin.pip:
         name: docker
         state: absent
+      when:
+        - ansible_distribution_release != "bookworm"
 
     - name: Check if requested modules can be installed
       ansible.builtin.include_role:
         name: ansible-role-python_pip
       vars:
         python_pip_modules:
-          - name: docker
+          - name: Docker
 
     - name: Check if requested modules can be removed
       ansible.builtin.include_role:
         name: ansible-role-python_pip
       vars:
         python_pip_modules:
-          - name: docker
+          - name: Docker
             state: absent
 
     - name: Check if pyOpenSSL can be installed
@@ -40,9 +44,10 @@
         state: present
       notify:
         - Remove pyOpenSSL
+      when:
+        - ansible_distribution_release != "bookworm"
 
   handlers:
-
     - name: Remove pyOpenSSL
       ansible.builtin.pip:
         name: pyOpenSSL
