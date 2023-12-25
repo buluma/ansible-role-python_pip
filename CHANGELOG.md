@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.0.1](https://github.com/buluma/ansible-role-python_pip/tree/2.0.1) (2023-11-23)
+
+[Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/2.0.0...2.0.1)
+
 ## [2.0.0](https://github.com/buluma/ansible-role-python_pip/tree/2.0.0) (2023-11-23)
 
 [Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/1.0.10...2.0.0)
