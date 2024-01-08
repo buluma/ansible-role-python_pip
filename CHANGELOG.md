@@ -1,14 +1,18 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-python_pip/tree/HEAD)
+## [2.1.0](https://github.com/buluma/ansible-role-python_pip/tree/2.1.0) (2024-01-02)
 
-[Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/2.0.2...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/2.0.2...2.1.0)
 
 **Closed issues:**
 
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#19](https://github.com/buluma/ansible-role-python_pip/issues/19)
 - Update action [\#18](https://github.com/buluma/ansible-role-python_pip/issues/18)
 - rebuild action [\#17](https://github.com/buluma/ansible-role-python_pip/issues/17)
+
+**Merged pull requests:**
+
+- Bump actions/checkout from 3 to 4 [\#22](https://github.com/buluma/ansible-role-python_pip/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [2.0.2](https://github.com/buluma/ansible-role-python_pip/tree/2.0.2) (2023-12-25)
 
