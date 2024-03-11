@@ -88,10 +88,6 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/1.0.2...1.0.3)
 
-**Merged pull requests:**
-
-- Bump buluma/molecule-action from 4.0.5 to 4.0.6 [\#5](https://github.com/buluma/ansible-role-python_pip/pull/5) ([dependabot[bot]](https://github.com/apps/dependabot))
-
 ## [1.0.2](https://github.com/buluma/ansible-role-python_pip/tree/1.0.2) (2022-02-05)
 
 [Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/1.0.1...1.0.2)
@@ -106,6 +102,7 @@
 
 **Merged pull requests:**
 
+- Bump buluma/molecule-action from 4.0.5 to 4.0.6 [\#5](https://github.com/buluma/ansible-role-python_pip/pull/5) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Update .yamllint [\#3](https://github.com/buluma/ansible-role-python_pip/pull/3) ([buluma](https://github.com/buluma))
 - Bump alstr/todo-to-issue-action from 2.3 to 4.5.4 [\#2](https://github.com/buluma/ansible-role-python_pip/pull/2) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/galaxy-action from 1.0.1 to 1.1.0 [\#1](https://github.com/buluma/ansible-role-python_pip/pull/1) ([dependabot[bot]](https://github.com/apps/dependabot))
