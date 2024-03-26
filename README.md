@@ -14,8 +14,8 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 ---
 - name: Converge
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
 
   roles:
     - role: buluma.python_pip
@@ -27,8 +27,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: Prepare
   hosts: all
-  become: yes
-  gather_facts: no
+  become: true
+  gather_facts: false
 
   roles:
     - role: buluma.bootstrap
@@ -46,7 +46,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ---
 # defaults file for python_pip
 
-# By default no modules should be installed. Note: This does not work on Debian Bookworm.
+# By default false modules should be installed. Note: This does not work on Debian Bookworm.
 # See https://peps.python.org/pep-0668/
 python_pip_modules: []
 
@@ -57,7 +57,7 @@ python_pip_modules: []
 # python_pip_trusted_host: my-pip-repository.example.com
 
 # You can have this role update pip, using pip.
-python_pip_update: yes
+python_pip_update: true
 
 # You can use something other than the default pip binary.
 # python_pip_executable: pip3
