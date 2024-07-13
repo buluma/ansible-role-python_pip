@@ -13,9 +13,9 @@
         - ansible_distribution_release not in [ "bookworm", "noble" ]
         - ansible_os_family != "Alpine"
 
-    # - name: Check if bootstrap still works.
-    #   ansible.builtin.include_role:
-    #     name: buluma.bootstrap
+    - name: Check if bootstrap still works.
+      ansible.builtin.include_role:
+        name: buluma.bootstrap
 
     - name: Remove pip module
       ansible.builtin.pip:
