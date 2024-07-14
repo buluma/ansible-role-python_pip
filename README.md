@@ -17,6 +17,36 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   become: true
   gather_facts: true
 
+  pre_tasks:
+    - name: Update apt cache.
+      apt: update_cache=yes cache_valid_time=600
+      when: ansible_os_family == 'Debian'
+      changed_when: false
+
+    - name: Check if python3.11 EXTERNALLY-MANAGED file exists
+      ansible.builtin.stat:
+        path: /usr/lib/python3.11/EXTERNALLY-MANAGED
+      register: externally_managed_file_py311
+
+    - name: Rename python3.11 EXTERNALLY-MANAGED file if it exists
+      ansible.builtin.command:
+        cmd: mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
+      when: externally_managed_file_py311.stat.exists
+      args:
+        creates: /usr/lib/python3.11/EXTERNALLY-MANAGED.old
+
+    - name: Check if python3.12 EXTERNALLY-MANAGED file exists
+      ansible.builtin.stat:
+        path: /usr/lib/python3.12/EXTERNALLY-MANAGED
+      register: externally_managed_file_py312
+
+    - name: Rename python3.12 EXTERNALLY-MANAGED file if it exists
+      ansible.builtin.command:
+        cmd: mv /usr/lib/python3.12/EXTERNALLY-MANAGED /usr/lib/python3.12/EXTERNALLY-MANAGED.old
+      when: externally_managed_file_py312.stat.exists
+      args:
+        creates: /usr/lib/python3.12/EXTERNALLY-MANAGED.old
+
   roles:
     - role: buluma.python_pip
 ```
@@ -93,10 +123,10 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |---------|----|
 |[Alpine](https://hub.docker.com/r/buluma/alpine)|all|
 |[Debian](https://hub.docker.com/r/buluma/debian)|all|
-|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|9|
-|[Fedora](https://hub.docker.com/r/buluma/fedora)|39, 40|
+|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|9, 8|
+|[Fedora](https://hub.docker.com/r/buluma/fedora)|39, 38, 40|
 |[opensuse](https://hub.docker.com/r/buluma/opensuse)|all|
-|[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|focal, bionic, jammy|
+|[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|focal, bionic, jammy, lunar, noble|
 
 The minimum version of Ansible required is 2.12, tests have been done to:
 

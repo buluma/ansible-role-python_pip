@@ -17,9 +17,11 @@ galaxy_info:
     - name: EL
       versions:
         - "9"
+        - "8"
     - name: Fedora
       versions:
         - "39"
+        - "38"
         - "40"
     - name: opensuse
       versions:
@@ -29,6 +31,8 @@ galaxy_info:
         - focal
         - bionic
         - jammy
+        - lunar
+        - noble
 
   galaxy_tags:
     - python

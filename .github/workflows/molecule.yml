@@ -54,8 +54,12 @@ jobs:
             tag: "bullseye"
           - image: "enterpriselinux"
             tag: "latest"
+          - image: "enterpriselinux"
+            tag: "8"
           - image: "docker-molecule-images"
             tag: "fedora39"
+          - image: "docker-molecule-images"
+            tag: "fedora38"
           - image: "docker-molecule-images"
             tag: "fedora40"
           - image: "docker-molecule-images"
@@ -66,6 +70,10 @@ jobs:
             tag: "bionic"
           - image: "docker-molecule-images"
             tag: "jammy"
+          - image: "docker-molecule-images"
+            tag: "lunar"
+          - image: "docker-molecule-images"
+            tag: "noble"
     steps:
       - name: Checkout Role
         uses: actions/checkout@v4
