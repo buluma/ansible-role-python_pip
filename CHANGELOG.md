@@ -1,5 +1,9 @@
 # Changelog
 
+## [24.7.14](https://github.com/buluma/ansible-role-python_pip/tree/24.7.14) (2024-07-14)
+
+[Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/24.7.13...24.7.14)
+
 ## [24.7.13](https://github.com/buluma/ansible-role-python_pip/tree/24.7.13) (2024-07-13)
 
 [Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/24.3.31...24.7.13)
@@ -36,6 +40,7 @@
 **Merged pull requests:**
 
 - Bump actions/checkout from 3 to 4 [\#22](https://github.com/buluma/ansible-role-python_pip/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/molecule-action from 4.0.5 to 4.0.6 [\#5](https://github.com/buluma/ansible-role-python_pip/pull/5) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [2.0.2](https://github.com/buluma/ansible-role-python_pip/tree/2.0.2) (2023-12-25)
 
@@ -93,10 +98,6 @@
 ## [1.0.3](https://github.com/buluma/ansible-role-python_pip/tree/1.0.3) (2022-02-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/1.0.2...1.0.3)
-
-**Merged pull requests:**
-
-- Bump buluma/molecule-action from 4.0.5 to 4.0.6 [\#5](https://github.com/buluma/ansible-role-python_pip/pull/5) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [1.0.2](https://github.com/buluma/ansible-role-python_pip/tree/1.0.2) (2022-02-05)
 
