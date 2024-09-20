@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-python_pip/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/24.7.14...HEAD)
+
+**Merged pull requests:**
+
+- Bump ansible/ansible-lint from 24.7.0 to 24.9.0 [\#33](https://github.com/buluma/ansible-role-python_pip/pull/33) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [24.7.14](https://github.com/buluma/ansible-role-python_pip/tree/24.7.14) (2024-07-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/24.7.13...24.7.14)
