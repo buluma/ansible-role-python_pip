@@ -35,4 +35,4 @@
         creates: /usr/lib/python3.12/EXTERNALLY-MANAGED.old
 
   roles:
-    - role: ansible-role-python_pip
+    - role: buluma.python_pip
