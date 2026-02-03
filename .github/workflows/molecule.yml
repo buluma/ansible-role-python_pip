@@ -20,7 +20,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: ${{ github.ref }}-${{ github.workflow }}  
+  group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
 
 jobs:
@@ -35,7 +35,6 @@ jobs:
   molecule:
     needs:
       - lint
-    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
