@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-python_pip/tree/HEAD)
+## [26.2.3](https://github.com/buluma/ansible-role-python_pip/tree/26.2.3) (2026-02-03)
 
-[Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/24.7.14...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/24.7.14...26.2.3)
 
 **Merged pull requests:**
 
