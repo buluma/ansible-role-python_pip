@@ -48,7 +48,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
         creates: /usr/lib/python3.12/EXTERNALLY-MANAGED.old
 
   roles:
-    - role: ansible-role-python_pip
+    - role: buluma.python_pip
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-python_pip/blob/master/molecule/default/prepare.yml):
@@ -122,7 +122,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |---------|----|
 |[Alpine](https://hub.docker.com/r/buluma/alpine)|all|
 |[Debian](https://hub.docker.com/r/buluma/debian)|all|
-|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|9, 8|
+|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|all|
 |[Fedora](https://hub.docker.com/r/buluma/fedora)|all|
 |[opensuse](https://hub.docker.com/r/buluma/opensuse)|all|
 |[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|all|
