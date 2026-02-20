@@ -79,7 +79,6 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 # By default no modules should be installed. Note: This does not work on Debian Bookworm and Ubuntu noble.
 # See https://peps.python.org/pep-0668/
 python_pip_modules: []
-
 # Connect to a (pypi) proxy by setting this variable.
 # python_pip_proxy: "https://user:password@proxy:8443/artifactory/pypi/pypi-virtual/simple"
 
