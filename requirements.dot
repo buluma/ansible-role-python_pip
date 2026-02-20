@@ -1,0 +1,13 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "python_pip" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.buildtools" [fillcolor=green style=filled]
+    "buluma.epel" [fillcolor=green style=filled]
+  }
+  "python_pip" -> "buluma.bootstrap"
+  "python_pip" -> "buluma.buildtools"
+  "python_pip" -> "buluma.epel"
+}
