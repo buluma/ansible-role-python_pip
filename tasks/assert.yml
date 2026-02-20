@@ -1,5 +1,4 @@
 ---
-
 - name: assert | Test python_pip_modules
   ansible.builtin.assert:
     that:

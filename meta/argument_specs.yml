@@ -14,12 +14,12 @@ argument_specs:
         type: list
       python_pip_proxy:
         required: false
-        default: null
+        default:
         description: Connect to a (pypi) proxy by setting this variable.
         type: str
       python_pip_trusted_host:
         required: false
-        default: null
+        default:
         description: Don't forget to trust foreign pip repositories if you use them.
         type: str
       python_pip_update:
@@ -29,6 +29,6 @@ argument_specs:
         type: bool
       python_pip_executable:
         required: false
-        default: null
+        default:
         description: You can use something other than the default pip binary.
         type: str
