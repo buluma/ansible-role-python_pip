@@ -1,26 +1,26 @@
 ---
-  - name: Verify
-    hosts: all
-    become: true
-    gather_facts: true
+- name: Verify
+  hosts: all
+  become: true
+  gather_facts: true
 
-    tasks:
-      - name: Install pip module
-        ansible.builtin.pip:
-          name: docker
-          state: present
-        when:
-          - ansible_distribution_release not in [ "bookworm", "noble" ]
-          - ansible_os_family != "Alpine"
+  tasks:
+  - name: Install pip module
+    ansible.builtin.pip:
+      name: docker
+      state: present
+    when:
+    - ansible_distribution_release not in [ "bookworm", "noble" ]
+    - ansible_os_family != "Alpine"
 
-      - name: Check if bootstrap still works.
-        ansible.builtin.include_role:
-          name: buluma.bootstrap
+  - name: Check if bootstrap still works.
+    ansible.builtin.include_role:
+      name: buluma.bootstrap
 
-      - name: Remove pip module
-        ansible.builtin.pip:
-          name: docker
-          state: absent
-        when:
-          - ansible_distribution_release not in [ "bookworm", "noble" ]
-          - ansible_os_family != "Alpine"
+  - name: Remove pip module
+    ansible.builtin.pip:
+      name: docker
+      state: absent
+    when:
+    - ansible_distribution_release not in [ "bookworm", "noble" ]
+    - ansible_os_family != "Alpine"
