@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-python_pip/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/26.2.3...HEAD)
+
+**Merged pull requests:**
+
+- Bump docker/setup-buildx-action from 3 to 4 [\#38](https://github.com/buluma/ansible-role-python_pip/pull/38) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [26.2.3](https://github.com/buluma/ansible-role-python_pip/tree/26.2.3) (2026-02-03)
 
 [Full Changelog](https://github.com/buluma/ansible-role-python_pip/compare/24.7.14...26.2.3)
