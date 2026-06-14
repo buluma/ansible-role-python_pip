@@ -58,7 +58,7 @@
     executable: "{{ python_pip_executable | default(omit) }}"
   when:
     - python_pip_update
-    - ansible_facts.distribution_release not in [ "bookworm", "noble" ]
+    - ansible_facts.distribution_release not in [ "bookworm", "noble", "trixie" ]
     - ansible_facts.os_family != "Alpine"
 
 - name: Install requested modules
@@ -71,5 +71,5 @@
   loop_control:
     label: "{{ item.name }}"
   when:
-    - ansible_facts.distribution_release not in [ "bookworm", "noble" ]
+    - ansible_facts.distribution_release not in [ "bookworm", "noble", "trixie" ]
     - ansible_facts.os_family != "Alpine"
