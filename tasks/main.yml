@@ -4,6 +4,7 @@
   ansible.builtin.find:
     paths:
       - /usr/lib
+      - /usr/local/lib
     patterns:
       - "EXTERNALLY-MANAGED"
     recurse: true
@@ -58,8 +59,8 @@
     executable: "{{ python_pip_executable | default(omit) }}"
   when:
     - python_pip_update
-    - ansible_facts['distribution_release'] not in [ "bookworm", "noble", "trixie" ]
-    - ansible_facts['os_family'] != "Alpine"
+    - ansible_facts['distribution_release'] | default('') not in [ "bookworm", "noble", "trixie", "forky" ]
+    - ansible_facts['os_family'] | default('') != "Alpine"
 
 - name: Install requested modules
   ansible.builtin.pip:
@@ -71,5 +72,5 @@
   loop_control:
     label: "{{ item.name }}"
   when:
-    - ansible_facts['distribution_release'] not in [ "bookworm", "noble", "trixie" ]
-    - ansible_facts['os_family'] != "Alpine"
+    - ansible_facts['distribution_release'] | default('') not in [ "bookworm", "noble", "trixie", "forky" ]
+    - ansible_facts['os_family'] | default('') != "Alpine"
