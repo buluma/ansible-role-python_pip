@@ -17,9 +17,8 @@ _python_pip_packages:
 
 # Find the list of packages, based on the mapping above and the used python
 # version used for running Ansible.
-python_pip_packages:
-  "{{ _python_pip_packages[ansible_python.version.major | int][ansible_facts['os_family']] | default(_python_pip_packages[ansible_python.version.major |
-  int]['default'] | default(_python_pip_packages['3']['default'])) }}"
+python_pip_packages: "{{ _python_pip_packages[ansible_python.version.major | int][ansible_facts['os_family']] | default(_python_pip_packages[ansible_python.version.major
+  | int]['default'] | default(_python_pip_packages['3']['default'])) }}"
 
 _python_pip_pip_package:
   default:
@@ -27,7 +26,8 @@ _python_pip_pip_package:
   RedHat-7:
     - pip==20.3.4
 
-python_pip_pip_package: "{{ _python_pip_pip_package[ansible_facts['os_family'] ~ '-' ~ ansible_facts['distribution_major_version']] | default(_python_pip_pip_package['default'] ) }}"
+python_pip_pip_package: "{{ _python_pip_pip_package[ansible_facts['os_family'] ~ '-' ~ ansible_facts['distribution_major_version']] | default(_python_pip_pip_package['default']
+  ) }}"
 
 _python_pip_pip_state:
   default: latest
